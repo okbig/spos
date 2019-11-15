@@ -8,7 +8,6 @@ int a[MAX][MAX];
 int b[MAX][MAX];
 int c[MAX][MAX];
 
-//Generic function prototypes
 void* mult(void*);
 
 int main()
@@ -76,54 +75,4 @@ void* mult(void * arg)
         }       
     }
     printf("\nThread id is : %ld",pthread_self());  
-}//END 
-
-/*
-Output
-Enter First matrix : 
-Enter a[0][0] : 2
-
-Enter a[0][1] : 3
-
-Enter a[0][2] : 4
-
-Enter a[1][0] : 2
-
-Enter a[1][1] : 4
-
-Enter a[1][2] : 5 
-
-Enter a[2][0] : 64
-
-Enter a[2][1] : 7
-
-Enter a[2][2] : 2
-
-Enter Second matrix
-Enter b[0][0] : 3
-
-Enter b[0][1] : 5
-
-Enter b[0][2] : 3
-
-Enter b[1][0] : 6
-
-Enter b[1][1] : 4
-
-Enter b[1][2] : 1
-
-Enter b[2][0] : 8
-
-Enter b[2][1] : 4
-
-Enter b[2][2] : 7
-
-Thread id is : 140601783338752
-Thread id is : 140601774946048
-Thread id is : 140601766553344
-
-Result is : 
-56 38 37 
-70 46 45 
-250 356 213 
-*/
+}

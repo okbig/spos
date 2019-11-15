@@ -1,5 +1,3 @@
-Threads
-
 #include<unistd.h>
 #include<pthread.h>
 #include<stdio.h>
@@ -56,14 +54,3 @@ void *mult(void *arg)
     pthread_exit(0);          //Exits from thread
 
 }
-/*
-Output
-enter the value of n1 and n2 4
-5
-
-The value of shared after subtraction is : -1
-The value of shared after multiplication is : 20
-The value of shared after addtion is : 9
- Thread ids are : 140590137652992 140590129260288 140590120867584
- */
-
